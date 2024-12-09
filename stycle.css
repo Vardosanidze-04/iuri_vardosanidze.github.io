@@ -1,0 +1,10 @@
+.onclick{
+    border: solid 5px blue;
+    border-radius: 25px;
+    size: 300px;
+    height: 200px;
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
