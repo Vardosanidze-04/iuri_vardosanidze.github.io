@@ -1,5 +1,5 @@
 
-/*let myAge = 20;
+let myAge = 20;
 myAge = myAge*2.5;
 console.log(myAge);
 
@@ -118,7 +118,7 @@ console.log(myAge);
 
  const Name = ["George", "Luke", "Ann", ["Leonardo","Mike","Rafaelo"]]
  console.log(Name[3][2]);
- console.log(Name[2]);*/
+ console.log(Name[2]);
 
  const mentor = [
  {
