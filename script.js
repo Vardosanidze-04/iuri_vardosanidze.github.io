@@ -1,5 +1,5 @@
 
-let myAge = 20;
+/*let myAge = 20;
 myAge = myAge*2.5;
 console.log(myAge);
 
@@ -115,3 +115,28 @@ console.log(myAge);
         }
     }
  }
+
+ const Name = ["George", "Luke", "Ann", ["Leonardo","Mike","Rafaelo"]]
+ console.log(Name[3][2]);
+ console.log(Name[2]);*/
+
+ const mentor = [
+ {
+    firstname: "Simon",
+    lastname: "Adkins",
+    age: 27,
+    job: "cesco",
+    students: ["luke", "xavi", "smith"]
+ },
+ {
+    firstname: "Baron",
+    lastname: "Uilson",
+    age: 34,
+ },{
+    firstname: "John",
+    lastname: "Biden",
+ }
+];
+ console.log(`${mentor[0].firstname} ${mentor[0].lastname}`);
+ console.log(mentor[1].firstname);
+ console.log(mentor[0].students[1]);
