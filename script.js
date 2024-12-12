@@ -168,3 +168,58 @@ console.log(myAge);
     console.log(`2 person averageAge is ${avgAge}`);
  }
  averageAge(2004,2010);
+
+ let x = 5.12345
+ console.log(x.toFixed(3));
+ console.log(x);
+
+ let z = 5.1234;
+ console.log(z.toString());
+ console.log(typeof z);
+
+ let y = 5.1234;
+ console.log(x.toPrecision(1));
+ console.log(x.toPrecision(2));
+ console.log(x.toPrecision(3));
+ console.log(x.toPrecision(4));
+ console.log(x.toPrecision(5));
+
+ let i = Math.abs(-33);
+ console.log(i);
+
+ let a = Math.round(4.53)
+ console.log(a);
+
+ let w = Math.floor(4.6)
+ console.log(w);
+
+ let v = Math.ceil(4.6)
+ console.log(v);
+
+ let t = Math.pow(5,2)
+ console.log(t);
+ console.log(t ** 2)
+
+ let e = Math.sqrt(25)
+ console.log(e);
+
+ let s = Math.random();
+ console.log(s);
+
+ let k = Math.max(5,66,77,34,55);
+ console.log(k);
+
+ let c = Math.min(5,66,77,34,55);
+ console.log(z);
+
+ const block = "#"
+ const line = block.repeat(7)
+ console.log(line);
+
+ const array = [1,2,3,4,5,]
+ array.push(6);
+ console.log(array);
+
+ const aray = [1,2,3,4,5,]
+ aray.reverse();
+ console.log(aray);
