@@ -140,3 +140,31 @@ console.log(myAge);
  console.log(`${mentor[0].firstname} ${mentor[0].lastname}`);
  console.log(mentor[1].firstname);
  console.log(mentor[0].students[1]);
+
+ function welcome(firstname,messages){
+    console.log(`heloo ${firstname}, just time you have ${messages} messages`);
+ }
+ welcome("Admim", 13);
+ welcome("George",7);
+
+ const Welcome = function(firstname,messages){
+    return `heloo ${firstname}, just time you have ${messages} messages`;
+ }
+ console.log(Welcome())
+
+ const wElcome = (firstname,messages) => {
+    return `node script.js`;
+ }
+ console.log(wElcome("Admin", 444));
+
+ const weLcome = firstname => `heloo ${firstname}, just time you have 0 messages`;
+ console.log(weLcome("Admin", 5))
+
+ function calculateAge(birthyear){
+    return 2023 - birthyear;
+ }
+ const averageAge = (person1,person2) =>{
+    const avgAge = (calculateAge(person1,) + calculateAge(person2)) /2;
+    console.log(`2 person averageAge is ${avgAge}`);
+ }
+ averageAge(2004,2010);
