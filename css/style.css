@@ -89,7 +89,6 @@ img {
     max-width: 70%;
     margin-left: 10%;
 }
-
 .menu a {
     text-decoration: none;
     color: #333;
@@ -191,7 +190,6 @@ img {
     background-color: silver;
     width: 100%;
     min-height: 380px;
-    border-bottom: solid 3.5px skyblue;
 }
 .companies h2{
     color: whitesmoke;
@@ -221,6 +219,7 @@ img {
     background-color: ghostwhite;
     min-height: 230px;
     width: 100%;
+    border-top: solid 3px skyblue;
     
 }
 .contact {
@@ -244,4 +243,64 @@ img {
     background-color: whitesmoke;
     color: gray;
     border-top: solid 1px gray;
+}
+
+
+.button-container {
+    display: flex;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: fit-content;
+    margin-top: 0.5em;
+}
+.button {
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+.button.active {
+    background-color: #E30613; 
+    color: white;
+}
+.button.inactive {
+    background-color: white;
+    color: #333;
+}
+
+.button.inactive:hover {
+    background-color: #f0f0f0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 4em;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+td img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+}
+
+td p {
+    margin: 0;
 }
