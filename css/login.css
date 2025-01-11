@@ -35,10 +35,10 @@ body {
 
 .input-box .input-field {
     width: 100%;
-    height: 60px;
+    height: 57px;
     font-size: 17px;
     padding: 0 25px;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
     border-radius: 30px;
     border: none;
     box-shadow: 0px 5px 10px 1px rgb(0,0,0,0.05);
@@ -48,11 +48,11 @@ body {
 
 ::placeholder {
     font-weight: 500px;
-    color: #222;
+    color: #555;
 }
 
 .input-field:focus {
-    width: 105%;
+    width: 104%;
 }
 
 .forgot {
@@ -91,7 +91,7 @@ section a {
 .submit-btn {
     width: 100%;
     height: 60px;
-    background: #222;
+    background: darkblue;
     border: none;
     border-radius: 30px;
     cursor: pointer;
@@ -103,6 +103,7 @@ section a {
     top: 45%;
     left: 50%;
     color: #fff;
+    font-size: 18px;
     -webkit-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
@@ -110,7 +111,7 @@ section a {
 }
 
 .submit-btn:hover {
-    background: #000;
+    background: darkblue;
     transform: scale(1.05,1);
 }
 
@@ -123,4 +124,12 @@ section a {
 .sign-up-link a {
     color: #000;
     font-weight: 600;
+}
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
 }
