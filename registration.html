@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>რეგისტრაცია</title>
     <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="images/vidal.png">
 </head>
 <body>
     <div class="login-box">
@@ -12,26 +13,32 @@
             <header>რეგისტრაცია</header>
         </div>
         <div class="input-box">
-            <input type="text" class="input-field" placeholder="მომხმარებლის სახელი" autocomplete="off" required>
+            <input type="text" class="input-field" id="usernameInput" placeholder="შეიყვანეთ სახელი" oninput="capitalizeFirstLetter(this)" required>
+            <span id="usernameError" class="error-message"></span>
         </div>
         <div class="input-box">
-            <input type=" text" class="input-field" placeholder="ელ.ფოსტა" autocomplete="off" required>
+            <input type=" text" id="emailInput" class="input-field" placeholder="ელ.ფოსტა" autocomplete="off" required>
+            <span id="emailError" class="error-message"></span>
         </div>
         <div class="input-box">
-            <input type="text" class="input-field" placeholder="+995" autocomplete="off" required>
+            <input type="text" class="input-field" id="phoneInput" placeholder="შეიყვანეთ მობილურის ნომერი" oninput="validateMobile(this)" maxlength="9">
+            <span id="phoneError" class="error-message"></span>
         </div>
         <div class="input-box">
-            <input type="password" class="input-field" placeholder="პაროლი" autocomplete="off" required>
+            <input type="password" id="passwordInput" class="input-field" placeholder="პაროლი" autocomplete="off" required>
+            <span id="passwordStrength" class="password-strength"></span>
         </div>
         <div class="input-box">
-            <input type="password" class="input-field" placeholder="დაადასტურეთ პაროლი" autocomplete="off" required>
+            <input type="password" id="confirmPasswordInput" class="input-field" placeholder="დაადასტურეთ პაროლი" autocomplete="off" required>
+            <span id="confirmPasswordError" class="error-message"></span>
         </div>
         <div class="input-box">
-            <input type="date" class="input-field" placeholder="რეგისტრაციის თარიღი" autocomplete="off" required>
+            <input type="date" class="input-field" id="dobInput" placeholder="რეგისტრაციის თარიღი" autocomplete="off" required>
+            <span id="dobError" class="error-message"></span>
         </div>
         <div class="input-box">
             <label for="city">ქვეყანა</label>
-            <select id="country" name="country" required>
+            <select id="countryInput" name="country" required>
             <option value="">აირჩიე ქვეყანა</option>
             <option value="საქართველო">საქართველო</option>
             <option value="თურქეთი">თურქეთი</option>
@@ -41,7 +48,7 @@
         </div>
         <div class="input-box">
             <label for="city">ქალაქი</label>
-            <select id="city" name="city" required>
+            <select id="cityInput" name="city" required>
             <option value="">აირჩიე ქალაქი</option>
             <option value="tbilisi">თბილისი</option>
             <option value="batumi">ქუთაისი</option>
@@ -50,9 +57,10 @@
             </select>   
         </div>
         <div class="input-submit">
-            <button class="submit-btn" id="submit"></button>
+            <button class="submit-btn" id="registerBtn" data-translate="registerBtn"></button>
             <label for="submit">შესვლა</label>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

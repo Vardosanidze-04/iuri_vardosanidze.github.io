@@ -106,38 +106,6 @@ img {
     padding-top: 5px;
 }
 
-.slider {
-    transform: translate(0%,0%);
-    left: 100%;
-    overflow: hidden;
-}
-
-.wrapper {
-    display: flex;
-    animation: slide 7s infinite;
-}
-
-@keyframes slide {
-    0%{
-        transform: translateX(0);
-    }
-    25%{
-        transform: translateX(0);
-    }
-    30%{
-        transform: translateX(-100%);
-    }
-    50%{
-        transform: translateX(-100%);
-    }
-    55%{
-        transform: translateX(-200%);
-    }
-    75%{
-        transform: translateX(-200%);
-    }
-}
-
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -221,7 +189,7 @@ img {
     align-items: center;
     justify-content: center;
     gap: 1.8em;
-    padding-top: 1.5em;
+    padding-top: 1.8em;
 }
 
 .button-container {
@@ -461,6 +429,208 @@ p {
     padding: 20px;
 }
 
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 5%;
+        margin-top: 10px;
+    }
+
+    .menu {
+        justify-content: center;
+        min-width: 90%;
+        padding: 10px 0;
+    }
+
+    .menu a {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    .header-end {
+        font-size: 1.6em;
+        margin-left: 5%;
+        margin-top: 0.5em;
+    }
+
+    .banner {
+        min-width: 85%;
+        max-width: 85%;
+        margin-top: 1.2em;
+    }
+
+    .search-box {
+        margin-right: 0;
+        width: 85%;
+    }
+
+    .search {
+        width: 100%;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .product-card {
+        margin-bottom: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .button {
+        font-size: 15px;
+        padding: 8px 18px;
+    }
+
+    .pharmacy-item {
+        gap: 10px;
+    }
+
+    table th, table td {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 5%;
+    }
+
+    .menu {
+        flex-direction: column;
+        min-width: 100%;
+        padding: 10px 0;
+    }
+
+    .menu a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .header-end {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1.5em;
+        margin-left: 5%;
+    }
+
+    .search-box {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .search {
+        width: 90%;
+    }
+
+    .banner {
+        min-width: 90%;
+        max-width: 90%;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .companies {
+        padding: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .menu a {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+
+    .header-end {
+        font-size: 1.2em;
+        margin-left: 3%;
+    }
+
+    .banner {
+        min-width: 95%;
+        max-width: 95%;
+        margin-top: 1em;
+    }
+
+    .product-card {
+        box-shadow: none;
+        margin-bottom: 10px;
+    }
+
+    .product-title {
+        font-size: 16px;
+    }
+
+    .product-description {
+        font-size: 12px;
+    }
+
+    .footer-section {
+        font-size: 14px;
+    }
+
+    .search {
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .pharmacy-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pharmacy-logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    table th, table td {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
 
 
 
